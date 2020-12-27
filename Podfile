@@ -8,5 +8,6 @@ target 'MyPhotoFilter' do
   # Pods for MyPhotoFilter
 	pod 'RxSwift', '4.4.2'
 	pod 'RxCocoa', '4.4.2'
+	pod 'Kingfisher'
 
 end

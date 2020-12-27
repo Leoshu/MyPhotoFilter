@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CustomCell: UITableViewCell {
     
@@ -14,7 +15,11 @@ class CustomCell: UITableViewCell {
     
     func configure(by model: CellModel) {
         descriptionLabel.text = model.subtitle
-        imgView.image = model.image
+        imgView.kf.indicatorType = .activity
+        let downloader = KingfisherManager.shared.downloader
+        downloader.trustedHosts = Set(["via.placeholder.com"])
+        let url = URL(string: model.imgUrl)
+        imgView.kf.setImage(with: url,options: [.downloader(downloader)])
     }
 }
 

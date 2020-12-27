@@ -1,4 +1,7 @@
 PODS:
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
   - RxAtomic (4.4.2)
   - RxCocoa (4.4.2):
     - RxSwift (>= 4.4.2, ~> 4.4)
@@ -6,20 +9,23 @@ PODS:
     - RxAtomic (>= 4.4.2, ~> 4.4)
 
 DEPENDENCIES:
+  - Kingfisher
   - RxCocoa (= 4.4.2)
   - RxSwift (= 4.4.2)
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - RxAtomic
     - RxCocoa
     - RxSwift
 
 SPEC CHECKSUMS:
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
   RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
 
-PODFILE CHECKSUM: a15f7eb1bbaf53545dd62ad897b439788344291a
+PODFILE CHECKSUM: 03ddacbbbde9caeacaadb1ffd9f4f2865a69a89d
 
 COCOAPODS: 1.8.4
