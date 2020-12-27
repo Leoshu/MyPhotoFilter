@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     lazy var viewModel = ViewModel()
-
     lazy var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -24,8 +23,12 @@ class ViewController: UIViewController {
     }
 
     private func setupBinding() {
-        viewModel.tableViewData.asDriver()
-            .drive(tableView.rx.items(cellIdentifier: "CustomCell",
+        searchBar.rx.text.orEmpty
+                    .bind(to: viewModel.searchText)
+                    .disposed(by: disposeBag)
+        
+        viewModel.tableViewData
+            .bind(to: tableView.rx.items(cellIdentifier: "CustomCell",
                                       cellType: CustomCell.self)) { row, model, cell in
                 cell.configure(by: model)
             }.disposed(by: disposeBag)

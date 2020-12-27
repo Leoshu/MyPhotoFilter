@@ -23,6 +23,7 @@ extension CustomCell {
         var imgUrl: String = ""
         @DummyValue(wrappedValue: "RxSwift是一個非常nice的框架")
         var subtitle: String?
+        @DummyValue(wrappedValue: UIImage(named: "icon"))
         var image: UIImage?
     }
 }
