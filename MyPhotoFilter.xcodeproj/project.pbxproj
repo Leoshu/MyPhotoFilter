@@ -16,6 +16,7 @@
 		B38E2392259814F500DEB9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38E2390259814F500DEB9DA /* LaunchScreen.storyboard */; };
 		B38E23A225981DA400DEB9DA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E23A125981DA400DEB9DA /* ViewModel.swift */; };
 		B38E23A5259822A800DEB9DA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E23A4259822A800DEB9DA /* CustomCell.swift */; };
+		B38E23A82598281C00DEB9DA /* Fluent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E23A72598281C00DEB9DA /* Fluent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B38E2393259814F500DEB9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B38E23A125981DA400DEB9DA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B38E23A4259822A800DEB9DA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		B38E23A72598281C00DEB9DA /* Fluent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fluent.swift; sourceTree = "<group>"; };
 		E1AF8A5E90262CB2D52509E5 /* Pods-MyPhotoFilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPhotoFilter.release.xcconfig"; path = "Target Support Files/Pods-MyPhotoFilter/Pods-MyPhotoFilter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				B38E2387259814F100DEB9DA /* SceneDelegate.swift */,
 				B38E2389259814F100DEB9DA /* ViewController.swift */,
 				B38E23A4259822A800DEB9DA /* CustomCell.swift */,
+				B38E23A72598281C00DEB9DA /* Fluent.swift */,
 				B38E23A125981DA400DEB9DA /* ViewModel.swift */,
 				B38E238B259814F100DEB9DA /* Main.storyboard */,
 				B38E238E259814F500DEB9DA /* Assets.xcassets */,
@@ -214,6 +217,7 @@
 				B38E238A259814F100DEB9DA /* ViewController.swift in Sources */,
 				B38E2386259814F100DEB9DA /* AppDelegate.swift in Sources */,
 				B38E23A5259822A800DEB9DA /* CustomCell.swift in Sources */,
+				B38E23A82598281C00DEB9DA /* Fluent.swift in Sources */,
 				B38E23A225981DA400DEB9DA /* ViewModel.swift in Sources */,
 				B38E2388259814F100DEB9DA /* SceneDelegate.swift in Sources */,
 			);
