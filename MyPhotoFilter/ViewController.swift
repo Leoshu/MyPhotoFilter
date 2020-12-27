@@ -19,8 +19,4 @@ class ViewController: UIViewController {
 
 }
 
-class CustomCell: UITableViewCell {
-    
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
-}
+
