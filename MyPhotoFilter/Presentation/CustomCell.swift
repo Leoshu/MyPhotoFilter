@@ -25,6 +25,11 @@ extension CustomCell {
         var subtitle: String?
         @DummyValue(wrappedValue: UIImage(named: "icon"))
         var image: UIImage?
+        
+        init(_ bean: PhotoBeanElement? = nil) {
+            self.subtitle = bean?.title
+            self.imgUrl = bean?.thumbnailURL ?? ""
+        }
     }
 }
 

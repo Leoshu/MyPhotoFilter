@@ -28,4 +28,15 @@ class ViewModel {
         return models.filter { ($0.subtitle?.lowercased() ?? "").contains(txt.lowercased()) }
     }
     
+    init() {
+        fetchFromNetwork()
+    }
+    
+    private func fetchFromNetwork() {
+        NetworkManager.shared.request { [weak self] (bean, error) in
+            if let beans = bean {
+                self?.fetchData.accept(beans.map({ CellModel($0) }))
+            }
+        }
+    }
 }
