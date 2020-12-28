@@ -32,6 +32,10 @@ class ViewController: UIViewController {
                                       cellType: CustomCell.self)) { row, model, cell in
                 cell.configure(by: model)
             }.disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(CustomCell.CellModel.self).subscribe(onNext: { (item) in
+            item.log()
+        }).disposed(by: disposeBag)
     }
 }
 

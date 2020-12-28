@@ -30,10 +30,16 @@ extension CustomCell {
         var subtitle: String?
         @DummyValue(wrappedValue: UIImage(named: "icon"))
         var image: UIImage?
-        
+        private var bean: PhotoBeanElement?
         init(_ bean: PhotoBeanElement? = nil) {
             self.subtitle = bean?.title
             self.imgUrl = bean?.thumbnailURL ?? ""
+            self.bean = bean
+        }
+        
+        func log() {
+            guard let bean = bean else { return }
+            print("Photo(albumId: \(bean.albumID), id: \(bean.id), title: \(bean.title), url: \(bean.url), thumbnailUrl: \(bean.thumbnailURL))")
         }
     }
 }
